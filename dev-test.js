@@ -1,6 +1,5 @@
 const Block = require('./block');
 
-const block = new Block('refdev1', 'refdev2', 'refdev3', 'refdev4');
+const newBlock = Block.mineBlock(Block.genesis(), 'foo');
 
-console.log(block.toString());
-console.log(Block.genesis().toString());
+console.log(newBlock.toString());
